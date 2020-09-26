@@ -105,3 +105,6 @@ A string can be reassigned, but cannot be changed by only one charater.
     - Key value pairs
         - Key needs to be immutable and unique (will be rewrite if duplicated), cannot be changed
     - [Reference](https://www.w3schools.com/python/python_dictionaries.asp)
+- tuple
+    - [reference](https://www.w3schools.com/python/python_tuples.asp)
+    - ordered and unchangeable
