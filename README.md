@@ -108,3 +108,41 @@ A string can be reassigned, but cannot be changed by only one charater.
 - tuple
     - [reference](https://www.w3schools.com/python/python_tuples.asp)
     - ordered and unchangeable
+- set
+    - unordered and unindexed
+    - unorded Collection of unique items
+    - [Reference](https://www.w3schools.com/python/python_sets.asp)
+    - Applications:
+        - remove duplicates from list
+        - difference from two sets
+        - remove element from a set if a member
+        - remove all elements of another set from this set
+        - find common items between two set
+        - confirm if two sets have items in common
+        - union two sets
+        - is subset or not
+        - is superset or not
+        ```python
+        s_list = [1,2,3,4,5,2,4,3]
+        s_set = set(s_list) # remove duplicates from list
+
+        a_set = {1,2,3,4}
+        b_set = {3,4,5,6}
+        a_set.difference(b_set) # output: 1,2
+
+        a_set.discard(5) # no element removed since 5 is not a member
+        a_set.discard(4) # 4 is removed from a_set
+
+        a_set.difference_update(b_set) # output is {1,2}. {3,4 }are elements of b_set so they are removed
+
+        a_set.intersection(b_set) # 3,4
+
+        a_set.isdisjoint(b_set) # False, they can join because commom items
+
+        a_set.union(b_set) # {1,2,3,4,5,6}
+
+        a_set.issubset(b_set) # false
+
+        a_set.issuperset(b_set) # false
+
+        ```
