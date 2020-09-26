@@ -75,3 +75,21 @@ print("{} is {} years old and is from city of {}".format(name, age, city))
 print("{1} is {0} years old and is from city of {2}".format(age, name, city))
 print(f"{name} is {age} years old and is from city of {city}") # f means formated string
 ```
+### 1.9 String index: slicing
+```python
+city = "Toronto"
+city[::-1] # reverse the string
+```
+### 1.10 Immutability
+Immutability means cannot be changed.
+A string can be reassigned, but cannot be changed by only one charater.
+
+### 1.11 Build-in functions and Methods
+- [Build-in functions](https://docs.python.org/3/library/functions.html)
+- Methods: are functions owned by something, with brackets .methods()
+    - [String methods](https://www.w3schools.com/python/python_ref_string.asp)
+    ```python
+    "my name is Tom".upper()
+    ```
+
+
