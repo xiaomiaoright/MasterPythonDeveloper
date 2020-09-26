@@ -91,5 +91,14 @@ A string can be reassigned, but cannot be changed by only one charater.
     ```python
     "my name is Tom".upper()
     ```
+### 1.12 Colletection(array) data types: list, typle, set, dictionary
+- There are four collection data types in the Python programming language:
+    [Reference](w3schools.com/python/python_strings.asp)
+    - List is a collection which is __ordered and changeable__. Allows duplicate members.
+    - Tuple is a collection which is __ordered and unchangeable__. Allows duplicate members.
+    - Set is a collection which is __unordered and unindexed__. No duplicate members.
+    - Dictionary is a collection which is __unordered, changeable and indexed__. No duplicate members.
 
+- Array: collection, one variable store many items
+- Matrix: 2D array
 
