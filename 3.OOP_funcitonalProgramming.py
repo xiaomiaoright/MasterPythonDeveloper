@@ -29,3 +29,9 @@ reduce(simple_sum, li, 0)
 
 reduce((lambda x, y: x * y), [1, 2, 3, 4], 10)
 
+# List, set, dictionary comprehension
+[x * 3 if (x % 2 != 0)  else (x *2 if x % 5 == 0 else x ) for x in range(100)]
+
+d = dict(zip(li_1, li_2))
+d
+{key: values * 2  for key, values in d.items() if values % 2 == 0}
