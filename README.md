@@ -234,3 +234,11 @@ dir(wizard1)
 ```
 ### Dunder Methods
 The methods defined with __ in name
+
+issubclass()
+
+### multiple inheritance
+MRO: method resolution order
+```python
+className.mro()
+```
