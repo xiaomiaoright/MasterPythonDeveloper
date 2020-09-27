@@ -146,3 +146,71 @@ A string can be reassigned, but cannot be changed by only one charater.
         a_set.issuperset(b_set) # false
 
         ```
+
+## Python Basics
+### Flow and Logics
+- Conditional Logic: if...elif...else
+- Logical operators
+- is vs. ==
+- For Loops
+- While Loops
+- break, continue, pass
+- range() and enumerate()
+
+### developer fundmentals
+- functions
+- parameters and arguments
+- default parameters and keywords
+- return
+- [Docstrings](https://www.datacamp.com/community/tutorials/docstrings-python)
+- clean code
+- *args and **kargs
+    - take as many args kargs as needed
+    ```python
+    def getSum(*args, **kwargs):    
+    return sum(args)+sum(kwargs.values())
+    getSum(1,2,3,4,5, num1=5, num2=10)
+    ```
+- Rule: params, *args, default parameters, **kwargs
+- Scope:
+    - What variables do i have access to
+        - local
+        - parental
+        - gloabl
+        - build-in
+    - global keyword
+
+## Object Oriented Programming
+[Object-oriented programming (OOP)](https://www.datacamp.com/community/tutorials/python-oop-tutorial?utm_source=adwords_ppc&utm_campaignid=898687156&utm_adgroupid=48947256715&utm_device=c&utm_keyword=&utm_matchtype=b&utm_network=g&utm_adpostion=&utm_creative=229765585186&utm_targetid=aud-299261629574:dsa-429603003980&utm_loc_interest_ms=&utm_loc_physical_ms=9000839&gclid=EAIaIQobChMIsLbi46WJ7AIVA6_ICh2wbgLIEAAYASAAEgJkdPD_BwE) is a programming paradigm based on the concept of "objects", which can contain data and code: data in the form of fields (often known as attributes or properties), and code, in the form of procedures (often known as methods). 
+
+Defined with Class keyword.
+
+### Object
+- OOP uses the concept of objects and classes.
+
+### Attributes and Methods
+- Attributes
+    - Class attributes, defined in __init__ method, dynamic
+    - Class Object attributes, defined the same level as method, not dynamic
+- __init__
+- [@classmethod and @staticmethod](https://www.geeksforgeeks.org/class-method-vs-static-method-python/)
+```python
+class NameOfClass():
+    def __init__(self, param1, param2):
+        self.param1 = param1
+        self.param2 = param2
+    
+    def method(self):
+        # method code
+        pass
+
+    @classmethod
+    def cls_method(cls, param1, param2):
+        # classmethod code
+        pass
+
+    @ staticmethod
+    def stc_method(param1, param2):
+        # staticmethod code
+        pass
+```
