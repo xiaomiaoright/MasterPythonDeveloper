@@ -242,3 +242,18 @@ MRO: method resolution order
 ```python
 className.mro()
 ```
+
+## Functional Programming
+### map()
+
+### filter()
+
+### zip()
+
+### reduce()
+
+### lambda expression
+
+### list set dictionary comprehensions
+
+## Python decorators
