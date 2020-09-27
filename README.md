@@ -214,3 +214,16 @@ class NameOfClass():
         # staticmethod code
         pass
 ```
+### 4 pillars of OOP
+- Encapsulation
+- Abstraction
+    - Private variable
+    - Public variable
+- Inhenritance
+    - inheriant from parent class
+- Polymorphism
+
+
+
+### Encapsulation
+package data (attribute) and mehtods
