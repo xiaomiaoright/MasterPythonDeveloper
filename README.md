@@ -227,3 +227,10 @@ class NameOfClass():
 
 ### super()
 inheriance parent class init
+
+### introspection
+```python
+dir(wizard1)
+```
+### Dunder Methods
+The methods defined with __ in name
