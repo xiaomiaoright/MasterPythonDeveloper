@@ -1,16 +1,16 @@
 class PlayerCharacter:
-    membership = True # class object attribute
+    membership = True # class  attribute
     def __init__(self, name, age):
         if self.membership and (age > 18):
-            self.name = name # class attribute
-            self.age = age
+            self._name = name # class object attribute
+            self._age = age
     
     def run(self):
         print('RUN!')
         return 'Done!'
     
     def shout(self):
-        print(f'my name is {self.name}. I am {self.age} years old.')
+        print(f'my name is {self._name}. I am {self._age} years old.')
 
     @classmethod
     def adding_things(cls, num1, num2):
@@ -28,6 +28,9 @@ class PlayerCharacter:
 
 
 player1 = PlayerCharacter("Tom", 30)
+player1._name
+player1._age
+player1.membership
 # player1.run()
 
 # player1.name
@@ -35,6 +38,11 @@ player1.shout()
 player1.adding_things(2,3)
 PlayerCharacter.adding_things(2,3)
 player2 = PlayerCharacter.adding_Object("Teddy", 12, 13)
-player2.age
+player2._age
 PlayerCharacter.adding2(3,19)
 # player1.membershipStatus()
+
+PlayerCharacter.membership
+
+player1.age = 18
+player1.

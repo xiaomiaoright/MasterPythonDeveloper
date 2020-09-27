@@ -1,4 +1,6 @@
 class User():
+    def __init__(self, email):
+        self.email = email
     def sign_in(self):
         print("logged in")
     
@@ -7,7 +9,9 @@ class User():
 
 class Wizard(User):
     # inherate from parent class User
-    def __init__(self, name, power):
+    def __init__(self, name, power, email):
+        super().__init__(email)
+        # or use: User.__init__(self, email)
         self.name = name
         self.power = power
 
@@ -16,16 +20,19 @@ class Wizard(User):
         print(f'Attack with power of {self.power}')
 
 class Archer(User):
-    def __init__(self, name, arrow):
+    def __init__(self, name, arrow, email):
+        User.__init__(self, email)
         self.name = name
         self.arrow = arrow
 
     def attack(self):
         print(f'Attack with arrow. Number of arrows left: {self.arrow}')
 
-wizard1 = Wizard('Emily', 50)
-archer1 = Archer('Time', 20)
+wizard1 = Wizard('Emily', 50, "emily@gmail.com")
+archer1 = Archer('Time', 20, 'time@gmail.com')
 wizard1.sign_in()
+wizard1.email
+
 wizard1.attack()
 archer1.attack()
 

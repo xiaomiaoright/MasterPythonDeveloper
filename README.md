@@ -225,5 +225,5 @@ class NameOfClass():
 
 
 
-### Encapsulation
-package data (attribute) and mehtods
+### super()
+inheriance parent class init
