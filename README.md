@@ -268,3 +268,27 @@ Decorators are usually called before the definition of a function you want to de
 [Build in exceptions](https://docs.python.org/3/library/exceptions.html)
 
 Good practice is always to catch errors based on specific exception
+
+
+## Python Generators
+```python
+class myGen():
+    current = 0
+    def __init__(self, first, last):
+        self.start = first
+        self.last = last
+
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        if myGen.current < self.last:
+            num = myGen.current
+            myGen.current += 1
+            return num
+        raise StopIteration
+
+gen = myGen(0, 10)
+for i in gen:
+    print(i)
+```
