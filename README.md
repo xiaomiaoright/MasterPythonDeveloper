@@ -292,3 +292,36 @@ gen = myGen(0, 10)
 for i in gen:
     print(i)
 ```
+
+## Modules in Python
+Module: each .py file is a module. Each module to build class/functions.
+
+Package: is a folder containning modules. A package can have several modules.
+
+Use import statement to import modules
+
+### "__name\__"
+
+
+### Build in modules
+#### sys
+```python
+import sys
+sys.argv
+
+first = sys.argv[1]
+last = sys.argv[2]
+
+print(f'Hello {first} {last}')
+```
+
+```sh
+$ python test.py Emily Lily
+```
+
+## Virtual Environments
+```sh
+$ pipenv
+```
+
+venv is an virtual environment created by python. Using venv to contain all the packages.
