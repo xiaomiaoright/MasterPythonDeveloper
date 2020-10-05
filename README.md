@@ -319,6 +319,11 @@ print(f'Hello {first} {last}')
 $ python test.py Emily Lily
 ```
 
+#### Your own package
+- start with lower case letter: function
+- start with capital letter: package
+
+
 ## Virtual Environments
 ```sh
 $ pipenv
