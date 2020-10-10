@@ -330,3 +330,6 @@ $ pipenv
 ```
 
 venv is an virtual environment created by python. Using venv to contain all the packages.
+
+
+## Debug code
