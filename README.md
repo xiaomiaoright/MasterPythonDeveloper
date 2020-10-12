@@ -387,3 +387,13 @@ test_str = "ding8fein5"
 check = pattern.fullmatch(test_str)
 check
 ```
+
+## Testing
+- Testing is important. 
+- Use a test.py file together with other python files to be tested.
+- style check package
+    - pylint
+    - pyflakes
+    - PEP 8
+- Built in module __unittest__
+- [Reference](https://docs.python.org/3/library/unittest.html)
