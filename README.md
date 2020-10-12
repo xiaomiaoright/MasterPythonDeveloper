@@ -333,3 +333,57 @@ venv is an virtual environment created by python. Using venv to contain all the 
 
 
 ## Debug code
+use of pdb package
+
+## File I/O
+### Input files
+- Read txt file
+```python
+m_file = open(r'data\test.txt') # open file
+m_file.read() # read all content
+m_file.seek(0) # cursor back to the starting 
+m_file.readlines() # read line by line
+m_file.close() # close file
+```
+
+- with statement and mode
+```python
+# Use open statement
+with open(r'data\test.txt', mode='r+') as my_file:
+    text = my_file.write('Hey, it\'s me \n')
+    print(text)
+    print(my_file.readlines())
+```
+
+- create a translator
+```python
+# Translate file
+from translate import Translator
+translator = Translator(to_lang='ja')
+try:
+    with open(r'data\trans_original.txt', mode='r') as trans_orig:
+        text = trans_orig.read()
+        translation = translator.translate(text)
+        print(translation)
+        with open(r'data\trans_tras.txt', mode = 'w') as trans_trans:
+            trans_trans.write(translation)
+except FileNotFoundError as err:
+    print('file not found')
+    raise err
+```
+
+## Python Regular Expression
+[Reference](https://www.w3schools.com/python/python_regex.asp)
+
+Tool: [ReGix101.com](https://regex101.com/)
+
+- application of regular expression: email address check
+
+- password check
+```python
+regex = r"[a-zA-Z0-9$%@#!]{8,}\d"
+pattern = re.compile(regex)
+test_str = "ding8fein5"
+check = pattern.fullmatch(test_str)
+check
+```
