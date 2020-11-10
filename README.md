@@ -397,3 +397,9 @@ check
     - PEP 8
 - Built in module __unittest__
 - [Reference](https://docs.python.org/3/library/unittest.html)
+
+
+## Scripting with Python
+### Image processing
+
+### PDF processing
