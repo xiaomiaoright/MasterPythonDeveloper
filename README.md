@@ -403,3 +403,29 @@ check
 ### Image processing
 
 ### PDF processing
+
+
+## Scraping Data with Python
+
+### Web Scraping Data with API
+
+- check what is allowed to be scrapped 
+    - /robots.txt
+
+### How Googlebot works
+
+- SEO
+
+### ycombinator project: scrapting web data
+
+- Beautiful Soup
+
+1. Set up environment
+    - beautifulsoup4
+    - 
+```sh
+$ pip install beautifulsoup4
+$ pip install requests
+```
+
+- Scrapy
